@@ -1,11 +1,23 @@
 {
   "name": "robot",
   "version": "1.0.0",
-  "description": "",
   "main": "robot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Parham Keshavarzi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parhamkeshavarzi/moving-robot-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parhamkeshavarzi/moving-robot-nodejs/issues"
+  },
+  "homepage": "https://github.com/parhamkeshavarzi/moving-robot-nodejs#readme",
+  "description": ""
 }
