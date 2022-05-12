@@ -1,3 +1,15 @@
+#1 npm install
+
+#2 npm start
+
+#3 press 1 to place the Robot
+
+#4 initiate x, y, f
+
+#5 now the Robot can move, turn left or right and report it's coordinates!
+
+--------------------------------------------------------------------------
+
 پروژه حرکت ربات ها دوره nodejs مکتبخونه
 
 صورت سوال پروژه:

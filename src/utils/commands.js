@@ -8,7 +8,6 @@ var main = () => {
     console.log('--------------------------')
     var command = readlineSync.keyInSelect(COMMANDS_LIST, 'Command the Robot from the list:');
     
-    //User select [0] CANCLE
     if (command == -1) {
         console.log('Good Bye!')
         console.log('--------------------------')
@@ -16,7 +15,6 @@ var main = () => {
         console.log('--------------------------')
         process(command)
     }
-
 }
 
 module.exports.main = main;
