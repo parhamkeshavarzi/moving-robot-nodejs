@@ -1,6 +1,8 @@
 const place = require('./place');
 const dataHandler = require('./dataHandler')
 const commands = require('./commands')
+const turnLeft = require('./left')
+const trunRight = require('./right')
 
 const { COMMANDS_LIST } = require('../../configs/robotConfigs')
 
@@ -10,11 +12,15 @@ var process = (command) => {
     }else if (COMMANDS_LIST[command] == 'MOVE'){
         //move()
     }else if (COMMANDS_LIST[command] == 'LEFT'){
-        //left()
+        turnLeft.left()
+        commands.main();
     }else if (COMMANDS_LIST[command] == 'RIGHT'){
-        //right()
+        trunRight.right()
+        commands.main();
     }else if (COMMANDS_LIST[command] == 'REPORT'){
-        dataHandler.readFile()
+        
+        var data = dataHandler.readFile()
+        console.log(`Robot Placed at: \n\t\tX=${data.x} \n\t\tY=${data.y} \n\t\tF=${data.f}`)
         commands.main();
     }
 }

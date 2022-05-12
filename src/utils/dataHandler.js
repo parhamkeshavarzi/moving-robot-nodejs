@@ -16,7 +16,7 @@ var writeToFile = (x, y, f) => {
 
 var readFile = () => {
     var data = JSON.parse(fs.readFileSync('./archive/robotData.json', 'utf8'));
-    console.log(`Robot Placed at: \n\t\tX=${data.x} \n\t\tY=${data.y} \n\t\tF=${data.f}`)
+    return {'x': data.x, 'y': data.y, 'f': data.f}
 }
 
 module.exports = { writeToFile, readFile }

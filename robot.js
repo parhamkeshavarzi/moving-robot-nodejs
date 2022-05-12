@@ -1,5 +1,3 @@
-const fs = require('fs')
-
 const commands = require('./src/utils/commands');
 const dataHandler = require('./src/utils/dataHandler')
 
