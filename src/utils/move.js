@@ -1,12 +1,12 @@
 const dataHandler = require('./dataHandler')
-const { DIRECTS } = require('../../configs/robotConfigs')
+const { DIRECTION } = require('../../configs/robotConfigs')
 
 var forward = () => {
     var data = dataHandler.readFile()
     var x = data.x
     var y = data.y
     var f = data.f
-    if(DIRECTS.indexOf(f) == -1){
+    if(DIRECTION.indexOf(f) == -1){
         console.log('Please Place the Robot by pressing "1"')
     }else{
         takeStep(x, y, f)
